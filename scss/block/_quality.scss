@@ -1,0 +1,147 @@
+.quality {
+  margin-bottom: 100px;
+}
+
+// .quality_block {
+// margin-left: auto;
+// margin-right: auto;
+// background-image: url('../img/quality-bg.png');
+// background-repeat: no-repeat;
+// background-size: cover;
+// border-radius: 10px;
+// position: relative;
+// }
+// 
+.quality_block {
+  padding: 120px 24px 61px 24px;
+  position: relative;
+  border-radius:30px;
+  overflow: hidden;
+  &::before {
+    content: "";
+    background-image: url('../img/quality-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 74%;
+    display: block;
+    bottom: 0;
+  }
+
+}
+
+.quality_img_block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 64px;
+  position: relative;
+}
+
+.quality_img {
+  border-radius: 10px;
+  border-radius: 10px;
+
+  // position: absolute;
+}
+
+.quality_card {
+  text-align: center;
+}
+
+.quality_title {
+  color: #FEFCF7;
+  font-family: Fraunces 9pt;
+  font-size: 28px;
+  font-weight: 900;
+  line-height: 28px;
+  margin-bottom: 24px;
+  position: relative;
+
+}
+
+.quality_text {
+  color: #FEFCF7;
+  font-family: Barlow;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  opacity: 0.8;
+}
+
+.quality_img_block2 {
+  display: none;
+  position: relative;
+}
+
+.quality_img2 {
+  border-radius: 10px;
+
+}
+
+@media (min-width:464px) {
+  .quality_block {
+    &::before {
+      content: "";
+      height:68% ;
+      bottom: 0;
+    }
+  
+  }
+}
+@media (min-width:682px) {
+  .quality_title {
+    font-size: 32px;
+    line-height: 48px;
+  }
+
+  .quality_block {
+    padding: 100px 58px 67px 58px;
+  }
+}
+
+@media (min-width:1100px) {
+  .quality_title {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .quality_text {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .quality_img_block2 {
+    display: flex;
+
+  }
+
+  .quality_img_block {
+    display: none;
+  }
+
+  .quality_block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  .quality_title {
+    margin-top: 88px;
+    margin-bottom: 32px;
+  }
+
+  .quality_text {
+    max-width: 540px;
+  }
+
+  .quality_card {
+    text-align: start;
+    padding-top: 100px;
+    padding-left: 85px;
+    margin-bottom: 88px;
+  }
+}
